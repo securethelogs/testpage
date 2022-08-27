@@ -20,8 +20,8 @@ button {
   width: 50vw;
 }
 
-textarea {
-  height: 300px;
+
+.textarea {
   padding: 12px 10px;
   box-sizing: border-box;
   border: 2px solid #ccc;
@@ -34,6 +34,11 @@ textarea {
   margin-left: auto;
   margin-right: auto;
 }
+
+.textarea1 { height: 300px;}
+
+.textarea2 { height: 50px;} 
+
 </style>
 
 <body>
@@ -43,12 +48,51 @@ textarea {
 
 <p style="font-size:5vw;">Yep</p>
 
-<textarea id="myInput">Some text...</textarea>
+<div id="myDIV1">
+<button onclick="myFunction()">Change Form</button>
+</br>
+</br>
+</br>
+</div>
+
+<div id="myDIV">
+<textarea class="textarea textarea2" id="myInput">Some text...</textarea>
+</br>
+</br>
+</div>
+
+
+<textarea class="textarea textarea1" id="myInput">Some text...</textarea>
 </br>
 </br>
 </br>
 
 <button class="button button" onclick="document.getElementById('myInput').value = ''">Send</button>
+
+
+<script>
+function myFunction() {
+  var x = document.getElementById("myDIV");
+  if (x.style.display === "none") {
+    x.style.display = "block";
+  } else {
+    x.style.display = "none";
+  }
+}
+</script>
+
+<script>
+function myFunction1() {
+  var x = document.getElementById("myDIV1");
+  if (x.innerHTML === "Change to email") {
+    x.innerHTML = "Change to text!";
+  } else {
+    x.innerHTML = "Change to email";
+  }
+}
+</script>
+
+
 
 </body>
 </html>
