@@ -3,22 +3,35 @@
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <style>
 
+
 button {
-  background-color: #4CAF50; /* Green */
-  border: none;
-  color: white;
-  padding: 20px;
+  padding: 15px 25px;
+  font-size: 24px;
   text-align: center;
-  text-decoration: none;
-  display: inline-block;
-  font-size: 16px;
   cursor: pointer;
-  border-radius: 4px;
-  display: block;
+  outline: none;
+  color: #fff;
+  background-color: #04AA6D;
+  border: none;
+  border-radius: 15px;
+  box-shadow: 0 9px #999;
   margin-left: auto;
   margin-right: auto;
   width: 50vw;
+  display: block;
+  padding: 20px;
+  text-align: center;
+
 }
+
+button:hover {background-color: #3e8e41}
+
+button:active {
+  background-color: #3e8e41;
+  box-shadow: 0 5px #666;
+  transform: translateY(4px);
+}
+
 
 
 .textarea {
@@ -48,6 +61,8 @@ button {
 
 <p style="font-size:5vw;">Yep</p>
 
+## get ride of this / trying to swap inner text of button
+
 <div id="myDIV1">
 <button onclick="myFunction()">Change Form</button>
 </br>
@@ -56,18 +71,18 @@ button {
 </div>
 
 <div id="myDIV">
-<textarea class="textarea textarea2" id="myInput">Some text...</textarea>
+<textarea class="textarea textarea2" id="myInput">email</textarea>
 </br>
 </br>
 </div>
 
 
-<textarea class="textarea textarea1" id="myInput">Some text...</textarea>
+<textarea class="textarea textarea1" id="myInput2">Some text...</textarea>
 </br>
 </br>
 </br>
 
-<button class="button button" onclick="document.getElementById('myInput').value = ''">Send</button>
+<button class="button button" onclick="cleartextarea()">Send</button>
 
 
 <script>
@@ -78,9 +93,11 @@ function myFunction() {
   } else {
     x.style.display = "none";
   }
+  
 }
 </script>
 
+## get ride of this / trying to swap inner text of button
 <script>
 function myFunction1() {
   var x = document.getElementById("myDIV1");
@@ -90,6 +107,17 @@ function myFunction1() {
     x.innerHTML = "Change to email";
   }
 }
+</script>
+
+
+<script>
+  function cleartextarea() {
+
+
+    document.getElementById('myInput').value = ''
+    document.getElementById('myInput2').value = ''
+
+  }
 </script>
 
 
