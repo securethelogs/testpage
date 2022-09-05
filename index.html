@@ -1,129 +1,100 @@
 <!DOCTYPE html>
 <html>
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
-<style>
-
-
-button {
-  padding: 15px 25px;
-  font-size: 24px;
-  text-align: center;
-  cursor: pointer;
-  outline: none;
-  color: #fff;
-  background-color: #04AA6D;
-  border: none;
-  border-radius: 15px;
-  box-shadow: 0 9px #999;
-  margin-left: auto;
-  margin-right: auto;
-  width: 50vw;
-  display: block;
-  padding: 20px;
-  text-align: center;
-
-}
-
-button:hover {background-color: #3e8e41}
-
-button:active {
-  background-color: #3e8e41;
-  box-shadow: 0 5px #666;
-  transform: translateY(4px);
-}
-
-
-
-.textarea {
-  padding: 12px 10px;
-  box-sizing: border-box;
-  border: 2px solid #ccc;
-  border-radius: 4px;
-  background-color: #f8f8f8;
-  font-size: 16px;
-  resize: none;
-  width: 80vw;
-  display: block;
-  margin-left: auto;
-  margin-right: auto;
-}
-
-.textarea1 { height: 300px;}
-
-.textarea2 { height: 50px;} 
-
-</style>
-
 <body>
 
-
-<h2>Test Page</h2>
-
-<p style="font-size:5vw;">Yep</p>
-
-## get ride of this / trying to swap inner text of button
-
-<div id="myDIV1">
-<button onclick="myFunction()">Change Form</button>
-</br>
-</br>
-</br>
-</div>
-
-<div id="myDIV">
-<textarea class="textarea textarea2" id="myInput">email</textarea>
-</br>
-</br>
-</div>
-
-
-<textarea class="textarea textarea1" id="myInput2">Some text...</textarea>
-</br>
-</br>
+<h2>What Bar now?</h2>
 </br>
 
-<button class="button button" onclick="cleartextarea()">Send</button>
+
+<img src="https://th.bing.com/th/id/OIP.6rWhbri0CnxFrC4kF0im1gHaE8?pid=ImgDet&rs=1" alt="Italian Trulli">
+
+</br>
+
+<p id="option"></p>
+
 
 
 <script>
-function myFunction() {
-  var x = document.getElementById("myDIV");
-  if (x.style.display === "none") {
-    x.style.display = "block";
-  } else {
-    x.style.display = "none";
-  }
-  
+
+function whatbar() {
+var random_number = Math.floor(Math.random() * 7);
+console.log(random_number);
+
+const bars = ["Penny Lane",
+"Secret Gardens",
+"Pitcher & Piano",
+"Cosy Club",
+"The Alchemist",
+"Vodka Revs",
+"Alto",
+"All Bar One",
+"Spoons"];
+document.getElementById("option").innerHTML = bars[random_number];
+
 }
-</script>
 
-## get ride of this / trying to swap inner text of button
-<script>
-function myFunction1() {
-  var x = document.getElementById("myDIV1");
-  if (x.innerHTML === "Change to email") {
-    x.innerHTML = "Change to text!";
-  } else {
-    x.innerHTML = "Change to email";
-  }
-}
 </script>
-
 
 <script>
-  function cleartextarea() {
+
+    function whatkaroke() {
+    var random_number = Math.floor(Math.random() * 20);
+    console.log(random_number);
+    
+    const songs = ["Love Song",
+    "Hardcore Rock",
+    "Slow R&B",
+    "Duet Time!",
+    "Ed Sheeran",
+    "K-Pop",
+    "POP!!",
+    "Oldie but goldie!",
+    "Girl Power Song!",
+    "The Room Choose!",
+    "The Birthday Girl Chooses!",
+    "Britney Spears",
+    "The person to their left chooses",
+    "The person to their right chooses",
+    "All the girls",
+    "All the boys",
+    "Something terrible!",
+    "Western",
+    "Pure Rap",
+    "Eminem",
+    "Something classical"];
+    document.getElementById("option").innerHTML = songs[random_number];
+    
+    }
+    
+    </script>
+
+<script>
+
+    function whatshot() {
+    var random_number = Math.floor(Math.random() * 7);
+    console.log(random_number);
+    
+    const shots = ["Sambuca",
+    "Something Nice!",
+    "Fireball!!",
+    "Something not nice!",
+    "The Birthday girl chooses",
+    "The group chooses",
+    "The bar chooses",
+    "Water",
+    "Beer"];
+    document.getElementById("option").innerHTML = shots[random_number];
+    
+    }
+    
+    </script>
 
 
-    document.getElementById('myInput').value = ''
-    document.getElementById('myInput2').value = ''
-
-  }
-</script>
 
 
-
-</body>
-</html>
+<button class="button button" onclick="whatbar()">What Bar?</button>
+<button class="button button" onclick="whatkaroke()">What Karoke?</button>
+<button class="button button" onclick="whatshot()">What Shot?</button>
 
 
 
