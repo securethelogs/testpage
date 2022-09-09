@@ -1,17 +1,94 @@
 <!DOCTYPE html>
 <html>
-<body>
+    <style>
+    IMG.displayed {
+        display: block;
+        margin-left: auto;
+        margin-right: auto 
+    
+    }
 
+    div.a {
+        text-align: center;
+        background-color: white;
+    }
+    div.b {
+        text-align: center;
+        font-family: "Comic Sans MS", cursive, sans-serif;
+font-size: 30px;
+letter-spacing: 2px;
+word-spacing: 2px;
+color: #1607FF;
+font-weight: 400;
+text-decoration: none solid rgb(68, 68, 68);
+font-style: normal;
+font-variant: normal;
+text-transform: none;
+background-color: white;
+    }
+    div.c {
+        text-align: center;
+        
+    }
+
+    h2 {
+        font-family: Arial, Helvetica, sans-serif;
+font-size: 30px;
+letter-spacing: 2px;
+word-spacing: 2px;
+color: #FF4420;
+font-weight: 700;
+text-decoration: none solid rgb(68, 68, 68);
+font-style: normal;
+font-variant: normal;
+text-transform: none;
+
+
+    }
+
+    .button {
+  padding: 15px 25px;
+  font-size: 24px;
+  text-align: center;
+  cursor: pointer;
+  outline: none;
+  color: #fff;
+  background-color: #04AA6D;
+  border: none;
+  border-radius: 15px;
+  box-shadow: 0 9px #999;
+}
+
+.button:hover {background-color: #3e8e41}
+
+.button:active {
+  background-color: #3e8e41;
+  box-shadow: 0 5px #666;
+  transform: translateY(4px);
+}
+
+body { 
+  background: url("https://img.pixers.pics/pho_wat(s3:700/FO/13/28/69/57/5/700_FO132869575_a2e5c3483adc13561d102a378c5a0199.jpg,700,700,cms:2018/10/5bd1b6b8d04b8_220x50-watermark.png,over,480,650,jpg)/posters-vector-seamless-pattern-with-rainbow-unicorns-white-unicorn-background.jpg.jpg"); 
+}
+
+    </style>
+
+
+
+<body>
+<div class="a">
 <h2>What Bar now?</h2>
 </br>
+</div>
 
 
-<img src="https://th.bing.com/th/id/OIP.6rWhbri0CnxFrC4kF0im1gHaE8?pid=ImgDet&rs=1" alt="Italian Trulli">
+<img src="https://media.istockphoto.com/photos/cat-unicorn-singing-a-song-picture-id1076077346?k=20&m=1076077346&s=612x612&w=0&h=R4HicFqy1A80LuG6naAxzrg-VQDAwEzMF-LTc52UIiQ=" alt="Cat" class="displayed">
 
 </br>
 
+<div class="b">
 <p id="option"></p>
-
+</div>
 
 
 <script>
@@ -90,13 +167,14 @@ document.getElementById("option").innerHTML = bars[random_number];
     </script>
 
 
+<div class="c">
 
 
-<button class="button button" onclick="whatbar()">What Bar?</button>
-<button class="button button" onclick="whatkaroke()">What Karoke?</button>
-<button class="button button" onclick="whatshot()">What Shot?</button>
+<button class="button" onclick="whatbar()">What Bar?</button>
+<button class="button" onclick="whatkaroke()">What Karoke?</button>
+<button class="button" onclick="whatshot()">What Shot?</button>
 
-
+</div>
 
 </body>
 </html>
